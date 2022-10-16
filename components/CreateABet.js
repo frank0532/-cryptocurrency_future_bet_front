@@ -214,10 +214,7 @@ export default function CreateABet() {
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-auto"
                     onClick={async () => {
                         let availableMargin = await getAvailableMargin()
-                        if (
-                            parseInt(betParams["msgValue"].toString()) >
-                            parseInt(availableMargin.toString())
-                        ) {
+                        if (betParams["msgValue"] > availableMargin) {
                             await payFromWallet({
                                 onSuccess: async (tx) => {
                                     try {
@@ -271,7 +268,7 @@ export default function CreateABet() {
                 <button
                     className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-1 px-2 rounded ml-auto"
                     onClick={async () => {
-                        let availableMargin = parseInt((await getAvailableMargin()).toString())
+                        let availableMargin = await getAvailableMargin()
                         setAvailableMargin(availableMargin)
                         window.alert(
                             `Your available margin in contract is ${ethers.utils.formatEther(
@@ -285,7 +282,7 @@ export default function CreateABet() {
                 <button
                     className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded ml-auto"
                     onClick={async () => {
-                        if (availableMargin == 0) {
+                        if (availableMargin.toString() == "0") {
                             window.alert(
                                 "Your available margin in contract is 0; please check it by click on 'Show Available Margin' button."
                             )
