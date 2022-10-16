@@ -31,4 +31,4 @@ For example, fill "'Create New Bet' input box" with "ETHUSD,2024-01-01 00:00:00,
 
 "5000" is the bet target price.
 
-## 4. You can click "Show Available Margin" button to see how many ETHs you have in this bet pool until now and click "WithDraw Margin" button to withdraw them to your Wallet.
+## 5. You can click "Show Available Margin" button to see how many ETHs you have in this bet pool until now and click "WithDraw Margin" button to withdraw them to your Wallet.
