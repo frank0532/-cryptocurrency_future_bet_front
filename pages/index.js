@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import CreateABet from "../components/CreateABet";
 import { useMoralis } from "react-moralis";
 
-const supportedChains = ["31337", "5"];
+const supportedChains = ["31337", "11155111"];
 
 export default function Home() {
   const { isWeb3Enabled, chainId } = useMoralis();
