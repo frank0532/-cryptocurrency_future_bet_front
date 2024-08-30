@@ -1,5 +1,5 @@
 # Bet the price of a cryptocurrency would be above some price at a future time or not.
-## This DAPP is deployed on Goerli testnet, so if you want to have a try, please switch to this testnet on your MetaMask Wallet and then come to this site: https://rough-night-4766.on.fleek.co/
+## This DAPP is deployed on Sepolia testnet, so if you want to have a try, please switch to this testnet on your MetaMask Wallet and then come to this site: https://rough-night-4766.on.fleek.co/
 
 ## 1. Initial web page looks like as below:
 <br/>
